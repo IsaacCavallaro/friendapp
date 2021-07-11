@@ -17,9 +17,8 @@
         <% if friend.user == current_user %>
         <tr>
           <td>
-            <%= friend.first_name %>
-            <%= friend.last_name %>
-            </td>
+          <%= link_to friend.first_name + ' ' + friend.last_name, friend %>
+          </td>
           <td><%= friend.email %></td>
           <td><%= friend.phone %></td>
           <td><%= friend.twitter %></td>
